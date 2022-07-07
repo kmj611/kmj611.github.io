@@ -38,6 +38,7 @@ body {
     height: 4500px;
     left: 0px;
     top: 550px;
+    bottom: 0px;
 
     background: #707070;
 }
@@ -101,10 +102,10 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
-    margin: 10px;
+    margin: 30px;
 }
 
 .items {
     background-color: #888888;
-    padding-top: 100%;  /* 1:1 ratio */
+    padding-top: 120%;
 }
