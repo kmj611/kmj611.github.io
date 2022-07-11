@@ -6,69 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"> </script>
 </head>
 
 <body style="overflow-x: hidden">
+
+    <div id="공간1">
+        <div id="공간2">
+            <div id="wrapper">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+        </div>
+    </div>
+
     <div id="상단바">
-        <div id="menubutton"></div>
-        <div id="logo"></div>
+        <div id="menubutton">
+
+        </div>
+        <div id="logo" OnClick="location.href ='http://youtube.com'"></div>
         <div id="searchbar">
             <input type="text" placeholder="검색">
-            <button>
+            <div id="searchbutton"></div>
+
         </div>
         <div id="loginbutton"></div>
     </div>
     <div id="상단바2">
         <div id="category">
-            <div id="categorybar">
-                <div class="categorybutton"></div>
-                <div class="categorybutton"></div>
-                <div class="categorybutton"></div>
-            </div>
+            <div id="categorybar"></div>
         </div>
     </div>
-    <div id="메뉴바1"></div>
-    <div id="메뉴바2"></div>
-    <div id="공간1">
-        <div id="wrapper">
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-            <div class="items"></div>
-        </div>
+    <input type="checkbox" id="sidebar">
+
+
+    <!-- 메뉴바 -->
+    <div class="sidebar_content">
+        <ul>
+            <li><a>메뉴1</a></li>
+            <li><a>메뉴2</a></li>
+            <li><a>메뉴3</a></li>
+            <li><a>메뉴4</a></li>
+            <li><a>메뉴5</a></li>
+            <li><a>메뉴6</a></li>
+        </ul>
+        <label for="sidebar"></label>
     </div>
+    <!-- 메뉴바 외 영역 -->
+    <label for="sidebar" class="background"></label>
+
 </body>
 
 </html>
