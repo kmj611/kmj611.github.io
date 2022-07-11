@@ -6,7 +6,7 @@ body {
 }
 
 body {
-    background: #707070;
+    background: #202020;
 }
 
 #상단바 {
@@ -29,12 +29,13 @@ body {
 
 #메뉴바 {
     position: fixed;
-    width: 200px;
+    width: 80px;
     height: 100%;
     left: 0px;
     top: 50px;
-
-    background: #1d1d1d;
+    background-size: cover;
+    background: #202020;
+    z-index: 1;
 }
 
 #공간1 {
@@ -43,7 +44,7 @@ body {
     left: 0px;
     right: 0px;
     top: 100px;
-    background: #DEDEDE;
+    background: #202020;
 }
 
 #공간2 {
@@ -51,7 +52,7 @@ body {
     height: auto;
     left: 80px;
     right: 50px;
-    background: #DEDEDE;
+    background: #181818;
 }
 
 #sidebar {
@@ -60,7 +61,6 @@ body {
     height: 35px;
     left: 14px;
     top: 8px;
-    background-image: url('image/메뉴버튼.png');
     background-size: cover;
 }
 
@@ -163,41 +163,48 @@ input {
     margin: 5%;
 }
 
-
-
-
-
-
+#menubutton{
+    pointer-events: none;
+    position: fixed;
+    width: 36px;
+    height: 35px;
+    left: 18px;
+    top: 11px;
+    background-image: url('image/메뉴버튼.png');
+    background-color: #202020;
+    z-index: 4;
+}
 
 
 /* 메뉴바 */
 .sidebar_content {
     position: fixed;
     top: 0;
-    left: -300px;
-    width: 300px;
+    left: -200px;
+    width: 200px;
     height: 100%;
-    background: #999;
+    top:50px;
+    background: #212121;
     transition: all .35s;
     z-index: 5;
 }
 
-.sidebar_content>ul {
-    margin: 20px;
+.sidebar_content>div {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    top:20px;
+    background-color: #212121;
+    background:url('./image/메뉴바.png');
+    background-size: cover;
+    
 }
 
-.sidebar_content>ul>li {
-    border-bottom: 1px solid #ccc;
-    list-style: none;
-}
-
-.sidebar_content>ul>li>a {
-    display: inline-block;
-    width: auto;
-    color: #fff;
-    padding: 10px;
-    margin: 10px;
-    background: #f5f5f5;
+.sidebar_content>div>div {
+    width: 200px;
+    height: 100%;
+    margin: 8px;
+    background-color: rgb(63, 63, 63);
 }
 
 .sidebar_content label[for*='sidebar'] {
@@ -209,10 +216,9 @@ input {
     z-index: -1;
 }
 
-/* 메뉴바 외 배경영역 */
 .background {
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -220,7 +226,7 @@ input {
     transition: all .35s;
     opacity: 0;
     visibility: hidden;
-    z-index: 1;
+    z-index: 2;
 }
 
 input#sidebar:checked~.sidebar_content {
