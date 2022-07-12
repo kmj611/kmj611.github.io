@@ -432,3 +432,19 @@ input#sidebar:checked~.background {
     background-image: url(./image/영상16.png);
     background-size: cover;
 }
+#영상17 {
+    background-image: url(./image/영상17.png);
+    background-size: cover;
+}
+#영상18 {
+    background-image: url(./image/영상18.png);
+    background-size: cover;
+}
+#영상19 {
+    background-image: url(./image/영상19.png);
+    background-size: cover;
+}
+#영상20 {
+    background-image: url(./image/영상20.png);
+    background-size: cover;
+}
