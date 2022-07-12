@@ -5,6 +5,7 @@ body {
     margin: 0;
     background: #202020;
 }
+
 #상단바 {
     position: fixed;
     width: 100%;
@@ -56,7 +57,7 @@ body {
     width: 36px;
     height: 35px;
     left: 14px;
-    top: 8px;
+    top: 5px;
     background-size: cover;
 }
 
@@ -71,6 +72,10 @@ body {
     background: #D9D9D9;
     background-image: url('image/로고.png');
     background-size: cover;
+}
+
+#logo:hover {
+    transform: scale(1.02);
 }
 
 #searchbar {
@@ -88,8 +93,8 @@ input {
     padding: 8px;
     border: 0px;
     outline: none;
-    left:0;
-    right:40px;
+    left: 0;
+    right: 40px;
     background-color: #121212;
     color: white;
 }
@@ -109,6 +114,10 @@ input {
 
 }
 
+#searchbutton:hover {
+    filter: brightness(150%);
+}
+
 #searchbutton:active {
     background-image: url('image/검색버튼.png');
     filter: invert(100%);
@@ -125,6 +134,10 @@ input {
     background-size: cover;
 }
 
+#loginbutton:hover {
+    filter: brightness(150%);
+}
+
 #category {
     position: absolute;
     width: 650px;
@@ -135,86 +148,115 @@ input {
 
 #전체 {
     position: absolute;
-    padding:2.5px 12px;
+    padding: 2.5px 12px;
     height: 25px;
-    background: #484848;
+    background: #dfdfdf;
     border-radius: 25px;
-    margin:2.5px 10px;
+    margin: 2.5px 10px;
     border: 1px solid gray;
-    color:white;
+    color: black;
 }
 
 #음악 {
     left: 65px;
     position: absolute;
-    padding:2.5px 12px;
+    padding: 2.5px 12px;
     height: 25px;
     background: #484848;
     border-radius: 25px;
-    margin:2.5px 10px;
+    margin: 2.5px 10px;
     border: 1px solid gray;
-    color:white;
+    color: white;
+}
+
+#음악:hover {
+    background: #939393;
 }
 
 #실시간 {
     left: 130px;
     position: absolute;
-    padding:2.5px 12px;
+    padding: 2.5px 12px;
     height: 25px;
     background: #484848;
     border-radius: 25px;
-    margin:2.5px 10px;
+    margin: 2.5px 10px;
     border: 1px solid gray;
-    color:white;
+    color: white;
 }
 
-#관광지 {
+#실시간:hover {
+    background: #939393;
+}
+
+
+#스포츠 {
     left: 210px;
     position: absolute;
-    padding:2.5px 12px;
+    padding: 2.5px 12px;
     height: 25px;
     background: #484848;
     border-radius: 25px;
-    margin:2.5px 10px;
+    margin: 2.5px 10px;
     border: 1px solid gray;
-    color:white;
+    color: white;
 }
+
+#스포츠:hover {
+    background: #939393;
+}
+
 
 #게임 {
     left: 290px;
     position: absolute;
-    padding:2.5px 12px;
+    padding: 2.5px 12px;
     height: 25px;
     background: #484848;
     border-radius: 25px;
-    margin:2.5px 10px;
+    margin: 2.5px 10px;
     border: 1px solid gray;
-    color:white;
+    color: white;
 }
 
-#요리 {
+#게임:hover {
+    background: #939393;
+}
+
+
+#학습 {
     left: 355px;
     position: absolute;
-    padding:2.5px 12px;
+    padding: 2.5px 12px;
     height: 25px;
     background: #484848;
     border-radius: 25px;
-    margin:2.5px 10px;
+    margin: 2.5px 10px;
     border: 1px solid gray;
-    color:white;
+    color: white;
 }
 
-#최근업로드된동영상{
+#학습:hover {
+    background: #939393;
+}
+
+
+#동영상360 {
     left: 420px;
     position: absolute;
-    padding:2.5px 12px;
+    padding: 2.5px 12px;
     height: 25px;
     background: #484848;
     border-radius: 25px;
-    margin:2.5px 10px;
+    margin: 2.5px 10px;
     border: 1px solid gray;
-    color:white;
+    color: white;
 }
+
+#동영상360:hover {
+    background: #939393;
+}
+
 
 #wrapper {
     display: grid;
@@ -223,17 +265,21 @@ input {
 
 .items {
     background-color: #888888;
-    padding-top: 76.88%;
+    padding-top: 78.5%;
     margin: 5%;
 }
 
-#menubutton{
+.items:hover {
+    transform: scale(1.1);
+}
+
+#menubutton {
     pointer-events: none;
     position: fixed;
     width: 36px;
     height: 35px;
     left: 18px;
-    top: 11px;
+    top: 8px;
     background-image: url('image/메뉴버튼.png');
     background-color: #202020;
     z-index: 4;
@@ -246,7 +292,7 @@ input {
     left: -250px;
     width: 250px;
     height: 100%;
-    top:50px;
+    top: 50px;
     background: #212121;
     transition: all .35s;
     z-index: 5;
@@ -256,11 +302,11 @@ input {
     position: absolute;
     width: 250px;
     height: 100%;
-    top:20px;
+    top: 20px;
     background-color: #212121;
-    background:url('./image/메뉴바.png');
+    background: url('./image/메뉴바.png');
     background-size: cover;
-    
+
 }
 
 .sidebar_content>div>div {
@@ -307,39 +353,82 @@ input#sidebar:checked~.background {
 
 
 
-#영상1{
+#영상1 {
     background-image: url(./image/영상1.png);
     background-size: cover;
 }
 
-#영상2{
+#영상2 {
     background-image: url(./image/영상2.png);
     background-size: cover;
 }
 
-#영상3{
+#영상3 {
     background-image: url(./image/영상3.png);
     background-size: cover;
 }
 
-#영상4{
+#영상4 {
     background-image: url(./image/영상4.png);
     background-size: cover;
 }
 
-#영상5{
+#영상5 {
     background-image: url(./image/영상5.png);
     background-size: cover;
 }
-#영상6{
+
+#영상6 {
     background-image: url(./image/영상6.png);
     background-size: cover;
 }
-#영상7{
+
+#영상7 {
     background-image: url(./image/영상7.png);
     background-size: cover;
 }
-#영상8{
+
+#영상8 {
     background-image: url(./image/영상8.png);
+    background-size: cover;
+}
+
+#영상9 {
+    background-image: url(./image/영상9.png);
+    background-size: cover;
+}
+
+#영상10 {
+    background-image: url(./image/영상10.png);
+    background-size: cover;
+}
+
+#영상11 {
+    background-image: url(./image/영상11.png);
+    background-size: cover;
+}
+
+#영상12 {
+    background-image: url(./image/영상12.png);
+    background-size: cover;
+}
+
+#영상13 {
+    background-image: url(./image/영상13.png);
+    background-size: cover;
+}
+
+#영상14 {
+    background-image: url(./image/영상14.png);
+    background-size: cover;
+}
+
+#영상15 {
+    background-image: url(./image/영상15.png);
+    background-size: cover;
+}
+
+#영상16 {
+    background-image: url(./image/영상16.png);
     background-size: cover;
 }
