@@ -3,16 +3,12 @@ body {
     height: auto;
     width: auto;
     margin: 0;
-}
-
-body {
     background: #202020;
 }
-
 #상단바 {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 55px;
     left: 0px;
     top: 0px;
     background: #202020;
@@ -23,7 +19,7 @@ body {
     width: 100%;
     height: 50px;
     right: 0;
-    top: 50px;
+    top: 55px;
     background: #202020;
 }
 
@@ -79,35 +75,37 @@ body {
 
 #searchbar {
     position: absolute;
-    width: 33%;
-    height: 35px;
-    right: 33%;
-    top: 8px;
+    width: 41%;
+    height: 36px;
+    right: 30%;
+    top: 7px;
+    border: 1px solid gray;
 }
 
 input {
     position: absolute;
     font-size: 16px;
-    width: 95%;
     padding: 8px;
     border: 0px;
     outline: none;
-    right: 50px;
+    left:0;
+    right:40px;
     background-color: #121212;
     color: white;
 }
 
 #searchbutton {
     position: absolute;
-    width: 40px;
-    height: 34px;
+    width: 60px;
+    height: 36px;
     border: 1px;
     outline: none;
     right: 0px;
     background-image: url('image/검색버튼.png');
     background-size: cover;
     background-color: #313131;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 
 }
 
@@ -129,37 +127,103 @@ input {
 
 #category {
     position: absolute;
-    width: 50%;
+    width: 650px;
     height: 35px;
     left: 30%;
     top: 8px;
 }
 
-#categorybar {
+#전체 {
     position: absolute;
-    width: 80%;
+    padding:2.5px 12px;
     height: 25px;
-    left: 10%;
-    top: 5px;
+    background: #484848;
+    border-radius: 25px;
+    margin:2.5px 10px;
+    border: 1px solid gray;
+    color:white;
 }
 
-.categorybutton {
+#음악 {
+    left: 65px;
     position: absolute;
-    width: 100px;
+    padding:2.5px 12px;
     height: 25px;
-    background: white;
-    border-radius: 12.5px;
-    margin-left: 10px;
+    background: #484848;
+    border-radius: 25px;
+    margin:2.5px 10px;
+    border: 1px solid gray;
+    color:white;
+}
+
+#실시간 {
+    left: 130px;
+    position: absolute;
+    padding:2.5px 12px;
+    height: 25px;
+    background: #484848;
+    border-radius: 25px;
+    margin:2.5px 10px;
+    border: 1px solid gray;
+    color:white;
+}
+
+#관광지 {
+    left: 210px;
+    position: absolute;
+    padding:2.5px 12px;
+    height: 25px;
+    background: #484848;
+    border-radius: 25px;
+    margin:2.5px 10px;
+    border: 1px solid gray;
+    color:white;
+}
+
+#게임 {
+    left: 290px;
+    position: absolute;
+    padding:2.5px 12px;
+    height: 25px;
+    background: #484848;
+    border-radius: 25px;
+    margin:2.5px 10px;
+    border: 1px solid gray;
+    color:white;
+}
+
+#요리 {
+    left: 355px;
+    position: absolute;
+    padding:2.5px 12px;
+    height: 25px;
+    background: #484848;
+    border-radius: 25px;
+    margin:2.5px 10px;
+    border: 1px solid gray;
+    color:white;
+}
+
+#최근업로드된동영상{
+    left: 420px;
+    position: absolute;
+    padding:2.5px 12px;
+    height: 25px;
+    background: #484848;
+    border-radius: 25px;
+    margin:2.5px 10px;
+    border: 1px solid gray;
+    color:white;
 }
 
 #wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
 .items {
     background-color: #888888;
-    padding-top: 80%;
+    padding-top: 76.88%;
     margin: 5%;
 }
 
@@ -175,13 +239,12 @@ input {
     z-index: 4;
 }
 
-
 /* 메뉴바 */
 .sidebar_content {
     position: fixed;
     top: 0;
-    left: -200px;
-    width: 200px;
+    left: -250px;
+    width: 250px;
     height: 100%;
     top:50px;
     background: #212121;
@@ -191,7 +254,7 @@ input {
 
 .sidebar_content>div {
     position: absolute;
-    width: 200px;
+    width: 250px;
     height: 100%;
     top:20px;
     background-color: #212121;
@@ -236,4 +299,47 @@ input#sidebar:checked~.sidebar_content {
 input#sidebar:checked~.background {
     opacity: 1;
     visibility: visible;
+}
+
+
+
+
+
+
+
+#영상1{
+    background-image: url(./image/영상1.png);
+    background-size: cover;
+}
+
+#영상2{
+    background-image: url(./image/영상2.png);
+    background-size: cover;
+}
+
+#영상3{
+    background-image: url(./image/영상3.png);
+    background-size: cover;
+}
+
+#영상4{
+    background-image: url(./image/영상4.png);
+    background-size: cover;
+}
+
+#영상5{
+    background-image: url(./image/영상5.png);
+    background-size: cover;
+}
+#영상6{
+    background-image: url(./image/영상6.png);
+    background-size: cover;
+}
+#영상7{
+    background-image: url(./image/영상7.png);
+    background-size: cover;
+}
+#영상8{
+    background-image: url(./image/영상8.png);
+    background-size: cover;
 }
