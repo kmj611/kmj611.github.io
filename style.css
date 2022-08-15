@@ -114,6 +114,20 @@ input {
 
 }
 
+#keyboard {
+    position: absolute;
+    width: 60px;
+    height: 36px;
+    border: 1px;
+    outline: none;
+    right: 100px;
+    background-image: url('image/keyboard.png');
+    background-size: cover;
+    background-color: #313131;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 #searchbutton:hover {
     filter: brightness(150%);
 }
